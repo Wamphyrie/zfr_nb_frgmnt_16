@@ -1,6 +1,7 @@
 <mvc:View
 	controllerName="phoenix.zfr_nb_frgmnt_16.controller.Object"
 	xmlns="sap.m"
+	xmlns:core = "sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.f.semantic"
 	xmlns:footerbar="sap.ushell.ui.footerbar">
@@ -17,13 +18,9 @@
 		</semantic:titleHeading>
 
 		<semantic:headerContent>
-			<ObjectNumber
-				number="{
-					path: 'Salary',
-					formatter: '.formatter.numberUnit'
-				}"
-				numberUnit="{Country}"
-			/>
+			
+			<!--<core:Fragment  fragmentName = "phoenix.view.myfrag"  type = "XML"  />-->
+			<core:Fragment  fragmentName = "phoenix.view.frag2"  type = "XML"  />
 		</semantic:headerContent>
 
 		<semantic:sendEmailAction>

@@ -1,0 +1,33 @@
+<core:FragmentDefinition
+	xmlns = "sap.m"
+	xmlns:core = "sap.ui.core"
+	xmlns:layout = "sap.ui.layout"
+	xmlns:form = "sap.ui.layout.form"
+	xmlns:unified = "sap.ui.unified">
+	
+	
+	<Table  items = "{/WrkSet}"  fixedLayout = "false"  growing = "true"  growingThreshold = "10"  >
+		<columns>
+			<Column>
+				<Label  text = "User Id"  design = "Bold"  />
+			</Column>
+			<Column>
+				<Label  text = "First Name"  design = "Bold"  />
+			</Column>
+			<Column>
+				<Label  text = "Salary"  design = "Bold"  />
+			</Column>
+		</columns>
+		
+		<items>
+			<ColumnListItems>
+				<cells>
+					<Text  text = "{Userid}"  />
+					<Text  text = "{Firstname}"  />
+					<Text  text = "{Salary}"  />
+				</cells>
+			</ColumnListItems>
+		</items>
+	</Table>
+	
+</core:FragmentDefinition>
